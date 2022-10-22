@@ -11,12 +11,12 @@
   <description>Sample Maven project with a working, deployable site.</description>
   <url>http://www.example.com</url>
 
-
+   <build>
         <pluginManagement>
         <plugins>
             <plugin>
             <groupId> ----- </groupId>
-            <artifactId>maven-war-plugin</artifactId>
+            <artifactId>maven-jar-plugin</artifactId> (check your plugin ) 
             <version>3.0.2</version>
             <configuration>
                 <archive>
@@ -29,6 +29,8 @@
             </plugin>
         </plugins>
         </pluginManagement>
+        <finalName>WebApp</finalName>
+    </build>
    
          
    <dependencies>
@@ -40,8 +42,5 @@
      </dependency>
    </dependencies>
              
-  <build>
-    <finalName>WebApp</finalName>
-  </build>
 </project>
 
