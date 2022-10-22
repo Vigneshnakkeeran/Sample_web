@@ -11,23 +11,26 @@
   <description>Sample Maven project with a working, deployable site.</description>
   <url>http://www.example.com</url>
 
-  <plugins>
-  <plugin>
-    <artifactId>maven-compiler-plugin</artifactId>
-    <version>3.1</version>       
-    <configuration>
-      <source>1.8</source>
-      <target>1.8</target>
-    </configuration>
-  </plugin>
-  </plugins>  
-             
-  <plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-war-plugin</artifactId>
-    <version>3.1.0</version>
-  </plugin>
-             
+  <build>
+        <pluginManagement>
+        <plugins>
+            <plugin>
+            <groupId> ----- </groupId>
+            <artifactId>maven-jar-plugin</artifactId> (check your plugin ) 
+            <version>3.0.2</version>
+            <configuration>
+                <archive>
+                    <manifest>
+                        <addClasspath>true</addClasspath>
+                        <mainClass> ------ </mainClass>
+                    </manifest>
+                </archive>
+            </configuration>
+            </plugin>
+        </plugins>
+        </pluginManagement>
+    </build>
+         
    <dependencies>
      <dependency>
       <groupId>junit</groupId>
