@@ -16,8 +16,8 @@
         <plugins>
             <plugin>
             <groupId> ----- </groupId>
-            <artifactId>maven-war-plugin</artifactId> (check your plugin ) 
-            <version>3.1.0</version>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.0.2</version>
             <configuration>
                 <archive>
                     <manifest>
