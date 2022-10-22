@@ -7,8 +7,7 @@
   <version>1.0-SNAPSHOT</version>
   <name>WebApp Maven Webapp</name>
   <url>http://maven.apache.org</url>
-  
-    <plugins>
+  <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.1</version>       
@@ -16,29 +15,21 @@
           <source>1.8</source>
           <target>1.8</target>
         </configuration>
-      </plugin>
+  </plugin>
              
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-war-plugin</artifactId>
-        <version>3.1.0</version>
-      </plugin>
+  <plugin>
+     <groupId>org.apache.maven.plugins</groupId>
+     <artifactId>maven-war-plugin</artifactId>
+     <version>3.1.0</version>
+  </plugin>
        
-      <plugin>
-        <artifactId>maven-release-plugin</artifactId>
-        <configuration>
-          <autoVersionSubmodules>true</autoVersionSubmodules>
-        </configuration>
-      </plugin>
-
-      <plugin>
-        <artifactId>maven-site-plugin</artifactId>
-        <configuration>
-          <reportPlugins>
-            <plugin>
-              <artifactId>maven-checkstyle-plugin</artifactId>
-            </plugin>
-            
+  <plugin>
+     <artifactId>maven-release-plugin</artifactId>
+     <configuration>
+     <autoVersionSubmodules>true</autoVersionSubmodules>
+     </configuration>
+  </plugin>
+          
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
